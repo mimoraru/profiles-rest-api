@@ -11,3 +11,31 @@ First trial to create a REST API
     3.4. Activate the python virtual environment: ~/env/bin/activate
     3.5. Install the requrements in the virtual environment: pip install -r requirements.txt
     3.6. Create the django project file: django-admin.py startproject profiles_project .
+
+
+## Features
+### Create new profile
+* handle registration of new users
+* Validate profile data
+
+### Listing existing profiles
+* search for profiles by email or name
+
+### Viewing a specific profile
+* using the profile ID
+
+### Updating the profile of the loggend in user
+* change name, email and password
+
+### Delete profile
+
+## API URLs
+### /api/profile/ 
+* list all profiles when the HTTP GET method is called
+* create new profile when  HTTP POST method is called
+
+### /api/profiles/<profile_id>
+* view specific profile details by using HTTP GET
+* update object using HTTP PUT/PATCH
+* remove it completely using HTTP DELETE
+

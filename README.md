@@ -13,7 +13,7 @@ First trial to create a REST API
     3.6. Create the django project file: django-admin.py startproject profiles_project .
 
 
-## Features
+## User API Features Features
 ### Create new profile
 * handle registration of new users
 * Validate profile data
@@ -38,4 +38,22 @@ First trial to create a REST API
 * view specific profile details by using HTTP GET
 * update object using HTTP PUT/PATCH
 * remove it completely using HTTP DELETE
+
+## Feed API 
+### Features
+* Create feed items for logged in users
+* Update feed items
+* Deleting feed items
+* viewing other users feed items
+
+### End point: /api/feed/ 
+* list all feed items
+* GET (list feed items)
+* POST (create feed items for logged in users)
+
+### End point: /api/feed/<feed_item_id>
+* manage specific feed items
+* GET (get the feed item with its details)
+* PUT / PATCH (update feed item)
+* DELETE (delete feed item)
 
